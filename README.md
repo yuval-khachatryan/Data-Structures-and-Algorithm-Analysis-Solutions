@@ -1,5 +1,5 @@
 # Data-Structures-and-Algorithm-Analysis-Solutions
-Solutions for Data Structures and Algorithm Analysis in C++ 4th edition by Mark Allen Weiss.
+Solutions for Data Structures and Algorithm Analysis in C++, 4th edition by Mark Allen Weiss.
 
 For now, it will contain solutions for selected exercises, the ones that I find either hard or interesting. 
 No plans for complete solutions right now, however it might change in future.
