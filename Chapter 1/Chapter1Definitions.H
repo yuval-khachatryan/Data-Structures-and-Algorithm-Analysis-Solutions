@@ -11,6 +11,7 @@
 #include <iostream>
 #include <time.h>
 
+/* Definitions for chapter - needs to be included in solutions in order to work */
 
 /* Selects k-th element, using the following routine.
 Choose an element randomly, compare it to all the elements in the array and put smaller elements from the left
