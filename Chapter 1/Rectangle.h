@@ -2,6 +2,10 @@
 #define YK_37039987_RECTANGLE_H
 #include <iostream>
 
+/*
+ * Rectangle class template - T is assumed to be either float or integer.
+ * Minimal checking for errors - values are not checked for negativity for the sake of simplicity
+ */
 template <typename T>
 /*
  * Rectangle class - provides a constructor and accessors and printing functions
