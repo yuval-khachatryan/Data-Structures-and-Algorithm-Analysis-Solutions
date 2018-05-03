@@ -6,3 +6,6 @@ No plans for complete solutions right now, however it might change in future.
 For every chapter, there will be a single tex and pdf file that will contain the solutions to theoretical exercises,
 and .cpp file for every programming assignment.
 I try to stick to modern C++ as much as possible.
+
+For now, Visual C++ 2017 is used. 
+It may change in future.
