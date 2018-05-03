@@ -7,5 +7,9 @@ For every chapter, there will be a single tex and pdf file that will contain the
 and .cpp file for every programming assignment.
 I try to stick to modern C++ as much as possible.
 
-For now, Visual C++ 2017 is used. 
+For now, Visual C++ 2017 is used to build and compile. 
+There is a possibility that the code will not work in other environments.
+
+There is a plan to do some of the exercisies in C#. They will be in their own folder.
+
 It may change in future.
