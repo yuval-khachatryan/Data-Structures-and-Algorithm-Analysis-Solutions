@@ -1,6 +1,9 @@
-#include "Vector.h"
+#include "Chapter3Routines.H"
+#include <iostream>
 
 using namespace weiss_solutions;
 int main() {
-	Vector<int> intVector{ 20 };
+	vectorTest();
+
+	std::cin.get();
 }
