@@ -29,7 +29,7 @@ namespace weiss_solutions
 
             const Object & operator * () const
             {
-                return retrieve;
+                return retrieve();
             }
 
             const_iterator & operator++ ()
@@ -173,6 +173,8 @@ namespace weiss_solutions
             std::swap(theSize, rhs.theSize);
             std::swap(head, rhs.head);
             std::swap(tail, rhs.tail);
+
+            return *this;
         }
 
         iterator begin()
@@ -331,4 +333,5 @@ namespace weiss_solutions
 
     };
 }
+
 #endif
