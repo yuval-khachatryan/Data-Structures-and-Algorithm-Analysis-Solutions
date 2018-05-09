@@ -25,8 +25,6 @@ namespace weiss_solutions
         class const_iterator
         {
         public:        
-            const_iterator() : current{ nullptr }, theList{ nullptr } {}
-
             const Object & operator * () const
             {
                 return retrieve();
@@ -38,7 +36,7 @@ namespace weiss_solutions
                 return *this;
             }
 
-            const_iterator & operator++ (int)
+            const_iterator operator++ (int)
             {
                 const_iterator old = *this;
                 current = current->next;
@@ -51,7 +49,7 @@ namespace weiss_solutions
                 return *this;
             }
 
-            const_iterator & operator-- (int) {
+            const_iterator operator-- (int) {
                 const_iterator old = *this;
                 current = current->prev;
                 return old;
@@ -72,7 +70,7 @@ namespace weiss_solutions
             Node * current;
             
 
-            Object & retrieve() const
+            const Object & retrieve() const
             {
                 return current->data;
             }
@@ -91,18 +89,19 @@ namespace weiss_solutions
         class iterator : public const_iterator
         {
         public:
-            iterator() 
-            {}
 
             Object & operator * ()
             {
-                return const_iterator::retrieve();
+                return this->current->data;
             }
 
+            
             const Object & operator * () const
             {
                 return const_iterator::operator*();
             }
+            
+
 
             iterator & operator++ ()
             {
@@ -110,7 +109,7 @@ namespace weiss_solutions
                 return *this;
             }
 
-            iterator & operator++ (int)
+            iterator operator++ (int)
             {
                 iterator old = *this;   
                 this->current = this->current->next;
@@ -123,7 +122,7 @@ namespace weiss_solutions
                 return *this;
             }
 
-            iterator & operator-- (int)
+            iterator operator-- (int)
             {
                 iterator old = *this;
                 current = current->prev;

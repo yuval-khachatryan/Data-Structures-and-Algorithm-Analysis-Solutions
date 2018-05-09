@@ -1,8 +1,10 @@
-#include <iostream>
+#include "SimpleList.h"
 #include "Chapter3Routines.h"
 
 using namespace weiss_solutions;
 
-int main() {
-    listDemo();
+int main()
+{
+    simpleListDemo();
+    return 0;
 }
