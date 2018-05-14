@@ -230,6 +230,27 @@ namespace weiss_solutions
             return itr;
         }
 
+        /// <summary>
+        /// Swaps two adjacent nodes - the first one pointed by position.
+        /// Implemented as a part of exercise 2
+        /// </summary>
+        iterator swapNodes(iterator position)
+        {
+            checkIterator(position);
+            if (position.current == lastNode)
+                throw std::out_of_range("Can not swap last node.\n");
+
+            auto previousNode = position.previous;
+            auto firstNode = position.current;
+            auto secondNode = firstNode->next;
+            firstNode->next = secondNode->next;
+            secondNode->next = firstNode;
+            previousNode->next = firstNode;
+            
+            if (secondNode == lastNode) lastNode = firstNode;
+            return iterator(*this, previousNode, previousNode->next);
+        }
+
         void clear()
         {
             if (theSize > 0)
